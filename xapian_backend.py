@@ -468,7 +468,7 @@ class XapianSearchBackend(BaseSearchBackend):
 
                 # store data without indexing it
                 document.set_data(pickle.dumps(
-                    (obj._meta.app_label, obj._meta.module_name, obj.pk, data),
+                    (obj._meta.app_label, obj._meta.model_name, obj.pk, data),
                     pickle.HIGHEST_PROTOCOL
                 ))
 
